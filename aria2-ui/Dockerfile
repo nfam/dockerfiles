@@ -1,0 +1,8 @@
+FROM nginx:alpine
+
+RUN set -xe && \
+    apk add --no-cache unzip wget && \
+    wget -N --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/0.4.0/aria-ng-0.4.0.zip && \
+    unzip -o aria-ng-0.4.0.zip -d /usr/share/nginx/html && \
+    rm -rf aria-ng-0.4.0.zip && \
+    apk del unzip wget
