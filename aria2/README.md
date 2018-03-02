@@ -1,7 +1,7 @@
 # aria2
 The original aria2 without any modification.
 
-## Build container
+## Create container
 ~~~
 docker create \
     --name=aria2 \
