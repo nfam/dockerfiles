@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Ninh Pham <ninhpham@hotmail.com>
+LABEL maintainer="ninhpham@hotmail.com"
 
 RUN apk update \
     && apk add --no-cache --update aria2 \
