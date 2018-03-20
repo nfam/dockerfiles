@@ -8,11 +8,11 @@
 
 Redirect `10.0.0.2:53` to `10.1.0.3:5353`
 
-~~~sh
+```sh
 docker run -d \
     --name=udp_redirect \
     -p 10.0.0.2:53:3000/udp \
     -e CADDR=10.1.0.3 \
     -e CPORT=5353 \
     nfam/udp_redirect
-~~~
+```
