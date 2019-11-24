@@ -1,7 +1,7 @@
 FROM nginx:alpine
 LABEL maintainer="ninhpham@hotmail.com"
 
-ARG VERSION="1.0.2"
+ARG VERSION="1.1.4"
 LABEL build_version="AriaNg version: ${VERSION}"
 
 RUN set -xe && \
